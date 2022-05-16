@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PAge title -->
+    <title>Help | Type&Count</title>
+    <!-- External CSS links -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="CSS/level.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+
+    <!-- font-family links-->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Link to add glyphicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+</head>
+<body style = "background-color :rgba(10, 9, 8, 0.8); color :#ffffff;">
+    <!-- Navigation bar with links to see rank and help section-->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Type&Count</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container bg-dark rounded" id="rules">
+        <h1 style="text-align: center; padding-top:20px">Rules of the game</h1>
+        <ul>
+            <li>This a word typing game with definite time limit.</li>
+            <li>There would be a word displayed and player has to write the same word in the space given.</li>
+            <li>There are three levels in this game. You can choose the levels as per your choice. 
+                <table id="level_table" class="table text-light">
+                    <tr>
+                        <th>Level</th>
+                        <th>Time</th>
+                    </tr>
+                    <tr>
+                        <td>Easy</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Medium</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Difficult</td>
+                        <td>3</td>
+                    </tr>
+                </table>
+            </li>
+            <li>Complete writing the word in the given time otherwise game will be over.</li>
+            <li>In case the game is over, write the current word correctly to restart.</li>
+            <li>You will be rewarded with 1 point for every correct written word. In case of game over, when you restart the game score will be reset to 0.</li>
+        </ul>
+    </div>
+    <br><hr>
+    <div class="container bg-dark rounded" id="asked">
+        <h1 style="text-align: center; padding-top:20px">Frequently asked question</h1>
+        <ul class="accordion accordion-flush" id="accordionOne">
+            <li class="accordion-item bg-dark">
+                <h4 class="accordion-header" id="headOne">
+                    <button class="accordion-button rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collOne" aria-expanded="true" aria-controls="collOne">
+                        How can I chnage levels?
+                    </button>
+                </h4>
+                <div id="collOne" class="accordion-collapse collpase" aria-labelledby="headOne" data-bs-parent="#accordionOne">
+                    <p class="accordion-body">
+                        You can choose levels at the homepage. 
+                        To go to homepage from any page you are browsing click on the Type&Count in the top section.
+                        You can also choose from the level dropdown menu in the navbar section.
+                    </p>
+                </div>              
+            </li>
+            <li class="accordion-item bg-dark">
+                <h4 class="accordion-header" id="headTwo">
+                    <button class="accordion-button rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collTwo" aria-expanded="true" aria-controls="collTwo">
+                        How can I go to homepage from any currently browsing page?
+                    </button>
+                </h4>
+                <div id="collTwo" class="accordion-collapse collpase" aria-labelledby="headTwo" data-bs-parent="#accordionOne">
+                    <p class="accordion-body">
+                        You can click the Type&Count icon in the Navigation bar. It will take you to the homepage.
+                    </p>
+                </div>              
+            </li>
+            <li class="accordion-item bg-dark">
+                <h4 class="accordion-header" id="headThree">
+                    <button class="accordion-button rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collThree" aria-expanded="true" aria-controls="collThree">
+                        Can I pause my game?
+                    </button>
+                </h4>
+                <div id="collThree" class="accordion-collapse collpase" aria-labelledby="headThree" data-bs-parent="#accordionOne">
+                    <p class="accordion-body">
+                        Now this is a good question. I will definitely try to add this feature in future. Wish me luck :)
+                    </p>
+                </div>              
+            </li>
+        </ul>
+    </div>
+    <br><hr>
+    <div class="container bg-dark rounded" id="ask">
+        <h1 style="text-align: center; padding-top:20px">Ask your doubts</h1>
+        <form id="form">
+            <div class="mb-2">
+                <label for="question" class="form-label">Your question???</label>
+                <input type="text" class="form-control" id="question" aria-describedby="question">
+                <p id="question" class="form-text">We will be glad to help you with your doubts.</p>
+            </div>
+            <center>
+                <button type="submit" class="btn btn-lg">Submit</button>
+            </center>
+        </form>
+    </div>
+    <br>
+    <script src="Javascript/bootstrap.bundle.min.js"></script>
+    <script src="javascript/index.js"></script>
+</body>
+</html>

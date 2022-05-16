@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Application has title of typecount -->
+    <title>Easy | Type&Count</title>
+
+    <!-- External CSS links -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="CSS/level.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+
+    <!-- font-family links-->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Link to add glyphicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+</head>
+<body id="level-body">
+    <!-- Navigation bar with links to see rank and help section-->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"> Type&Count</a>
+            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> Level <i class="bi bi-journal-text"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="" class="dropdown-item-text" onclick="redirectEasy()">Easy</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="" class="dropdown-item-text" onclick="redirectMedium()">Medium</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="" class="dropdown-item-text" onclick="redirectHard()">Difficult</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> Rank <i class="bi bi-journal-text"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="rank.html#easy" class="dropdown-item-text">Easy</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="rank.html#medium" class="dropdown-item-text">Medium</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="rank.html#Difficult" class="dropdown-item-text">Difficult</a>
+                        </li>
+                    </ul>
+                </li> 
+            </ul> 
+        </div>
+        </div>
+    </nav>
+    <!-- navbae ends here-->
+
+    <!-- game body starts here-->
+    <!-- word & input -->
+    <div class="container text-center" id="content">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h3 class="lead">Type the word within <span id="seconds"></span> seconds...</h3>
+                <h4 class="display-2 mb-3" id="current-word"></h4>
+                <input type="text" class="form-control form-control-lg" placeholder="Start now..." id="word-input" autofocus>
+                <h4 id="message" class="mt-5"></h4>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <h3>Time left: <span class="time"></span></h3>
+            </div>
+            <div class="col-md-6">
+                <h3>Score: <span class="score">0</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instructions-->
+    <div class="container">
+        <div class="row">
+            <center>
+                <div class="col-md-8">
+                    <div class="mt-5 mb-5 p-2 rounded" id="jumbotron">
+                        <h6 id="easy-h3">Instructions</h6>
+                        <p id="easy-p">Type each word in the given time limit to score. In case you are failed to do so game will be over. 
+                        To restart the game type the word again then your time will be reset.</p>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+    <!-- game body ends here-->
+    
+    <!-- footer starts-->
+    <footer class="container footer" >
+        <center>
+            <h3>Note: Remember to always improve. This is not the end...</h3>
+        </center>
+    </footer>
+</body>
+<script defer src="Javascript/bootstrap.bundle.min.js"></script>
+<script defer src="javascript/level.js" defer></script>
+</html>
